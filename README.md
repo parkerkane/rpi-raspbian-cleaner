@@ -1,6 +1,6 @@
-# rpi-raspbian-clear
+# rpi-raspbian-cleaner
 
-Common task to clean up rasbian for headless usage.
+Common tasks to clean up rasbian for headless usage.
 
 ### Usage
 
@@ -8,7 +8,7 @@ To uninstall default packages:
 
 	$ fab clear
 	
-Do upgarde and dist upgrade:
+Do upgarde and do dist upgrade:
 	
 	$ fab upgrade
 	
@@ -16,7 +16,7 @@ Update firmware:
 
 	$ fab firmware
 	
-Set gpumem as low as possible:
+Set gpumem as low as possible (16MB):
 
 	$ fab gpumem
 	
@@ -32,7 +32,7 @@ Replace openssh with dropbear:
 
 	$ fab dropbear
 	
-To set `/var/log`, `/var/run` and `/tmp` to use tmpfs to save SD card:
+Make `/var/log`, `/var/run` and `/tmp` to use tmpfs to save SD card:
 
 	$ fab tmpfs
 	
